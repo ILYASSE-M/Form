@@ -1,0 +1,141 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    background-color: #dfcf85;
+}
+span{
+    color: #198f1d;
+    font-size: 60px;
+}
+h1{
+    text-align: center;
+}
+.para{
+    text-align: center;
+    color: #868a9a;
+    font-weight: bold;
+    
+}   
+.container{
+    margin: auto;
+    border-radius: 15px;
+    /* box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.253); */
+    width:40%;
+    padding-top: 10px;
+    margin-top: 7%;
+    margin-bottom: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 120px;
+    background-color: white;
+}
+label{
+    display: block;
+    font-weight: bold;
+    color: rgb(112, 112, 112);
+    margin-bottom: 5px;
+}
+input{
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    width: 100%;
+    height: 28px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+button{
+    background-color: green; 
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom:15px;
+}
+input:checked {
+    border-color: #198f1d;
+}
+[for="check"]{
+    color: #198f1d;
+    margin-bottom: 15px;
+}
+[disabled]{
+    background-color: rgba(128, 128, 128, 0.185);
+    color: black;
+    font-weight: 600;
+}
+.Alert{
+    background-color: #ffef5d67;
+    padding-left: 10px;
+    border-left: 5px solid rgb(255, 187, 0);
+    width: 100%;
+    border-radius: 5px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margin-top: 15px;
+}
+input[type="text"]:checked{
+    outline: 4px solid green;
+}
+.container:hover{
+    box-shadow: 2px 1px 50px rgba(0, 0, 0, 0.253);
+}
+input[id="prenom"]:valid{
+    border: 2px solid green;
+    outline: none;
+}
+input[id="prenom"]:invalid:not(:placeholder-shown){
+    border: 2px solid red;
+    outline: none;
+}
+input[id="adresse"]:valid{
+    border: 2px solid green;
+    outline: none;
+}
+input[id="adresse"]:invalid:not(:placeholder-shown){
+    border: 2px solid red;
+    outline: none;
+}
+input[id="age"]:in-range:not(:placeholder-shown){
+    border: 2px solid green;
+    outline: none;
+}
+input[id="age"]:out-of-range:not(:placeholder-shown){
+    border: 2px solid red;
+    outline: none;
+}
+input[type="checkbox"]{
+    margin-left:-230px ;
+    margin-top: 15px;
+}
+label[for="check"]{
+    display: inline;
+    margin-left:-220px ;
+    font-size: 20px;
+}
+input[id="code"]:valid{
+    border: 2px solid green;
+}
+input[id="code"]:invalid:not(:placeholder-shown){
+    border: 2px solid red;
+    outline: none;
+}
+input[type=number] {
+  -moz-appearance:textfield;
+}
+/* partie :hover */
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    background-color: #28b92d;
+}
+input:not(#check):focus{
+   outline:1px solid rgb(243, 153, 17);
+   border:1px solid rgb(243, 153, 17) ;
+}

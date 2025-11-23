@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><span>N</span>ewsletter</h1>
+        <p class="para">Inscrivez vous pour recevoir nos derniere actualités et offres exclusives</p>
+        <p class="para">directement dans votre boite mail.</p>
+        <form action=""methode="">
+            <label for="prenom"> Nom et Prénom:</label>
+            <input type="text" id="prenom" minlength="2" placeholder="Nom et Prénom" required>
+            <label for="adresse">Adresse Email:</label>
+            <input type="email" id="adresse" placeholder="Adresse"required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" required min="18" max="45" placeholder="Age"> 
+            <label for="code">Code Promotionnel:</label>
+            <input type="text" name="" id="code" minlength="9" placeholder="code" required>
+            <label for="Numero">Numéro de membre:</label>
+            <input type="number" name="" id="Numero" required disabled placeholder="Bientot disponible"><br>
+            <input type="checkbox" name="" id="check" required> 
+            <label for="check"> J'accepte les Conditions Génerales</label>
+            <button type="submit"> S'inscrire maintenant</button>  
+            <div class="Alert">
+                <p>⚠️vous pouvez vous désinscrir à tout moment en cliquant sur le lien présent dans nos email</p>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
